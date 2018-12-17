@@ -1,0 +1,135 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing:border-box;
+}
+html{
+	width:100%;
+	height:100%;
+	/*width:1280px;
+	height:720px;*/
+	overflow:hidden;
+	position:relative;
+	font-size:62.5%;
+	font-family:'Microsoft YaHei',Arial, Helvetica, sans-serif;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg.png) no-repeat;
+	background-size: 100%;
+	padding: 20px;
+	color: #01FFFC;
+}
+img {
+	border:0;
+}
+h3,h5{
+	font-weight: normal;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 2.3rem;
+	font-weight: bold;
+}
+.details{
+	width: 100%;
+	height: calc(100% - 50px);
+	padding-top: 20px;
+	overflow: hidden;
+}
+ul.total,ul.timely{
+	width: 25%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+ul.total li{
+	width: 100%;
+	height: 48%;
+	background: url(../images/bg1.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	padding-top: 30px;
+}
+ul.total li:last-child {
+    /* margin-bottom: 7.2%; */
+    position: absolute;
+    bottom: 0;
+}
+.room{
+	width: 100%;
+	height: 45%;
+	padding-top: 7%;
+	text-align: center;
+}
+.room h5{
+	font-size: 5rem;
+}
+.totalDetails{
+	width: 50%;
+	padding: 0 20px;
+	float: left;
+	text-align: center;
+}
+.totalDetails p{
+	font-size: 3rem;
+	margin-bottom: 7px;
+    font-weight: 300;
+}
+.totalDetails span,.room span{
+	display: block;
+	width: 110px;
+	height: 35px;
+	line-height: 35px;
+	/*background: #0053C4;*/
+	font-size: 1.6rem;
+	color: #fff;
+	margin: 0 auto 7px;
+}
+.room span{
+	width: 170px;
+}
+.inter{
+	width: calc(50% - 40px);
+	height: 100%;
+	background: url(../images/bg2.png) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin: 0 20px;
+	position: relative;
+}
+ul.timely li{
+	width: 100%;
+	height: 31.3%;
+    background: url(../images/bg3.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-bottom: 6%;
+	padding-top: 30px;
+}
+ul.timely li:last-child{
+	margin-bottom: 0;
+	position: absolute;
+    bottom: 0;
+}
+ul.total li h3,.inter h3,ul.timely li h3{
+	background: url(../images/bg4.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    top: -25px;
+    text-align: center;
+	color: #fff;
+	font-size: 1.4rem;
+}
+ul.timely li h3{
+	background: url(../images/bg5.png) no-repeat;
+	background-size: 100% 100%;
+}

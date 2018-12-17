@@ -1,0 +1,268 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing:border-box;
+}
+html{
+/*	width:100%;
+	height:100%;*/
+	width:1280px;
+	height:720px;
+	overflow:hidden;
+	position:relative;
+	font-size:62.5%;
+	font-family:'Microsoft YaHei',Arial, Helvetica, sans-serif;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: 100%;
+	/*padding: 90px 60px;*/
+	color: #f1f1f1;
+}
+img {
+	border:0;
+}
+h3,h5{
+	font-weight: normal;
+}
+.picFocus {
+	float: left;
+    width: 60%;
+    height: 100%;
+	/*border: 1px solid #ccc;*/
+	position: relative;
+	overflow: hidden;
+	zoom: 1;
+}
+.picFocus .bd {
+	width: 100%;
+    height: 80%;
+}
+.picFocus .bd .tempWrap,.picFocus .bd ul,.picFocus .bd li {
+	width: 100%;
+	height: 100%;
+}
+.picFocus .bd li {
+	vertical-align: middle;
+}
+.picFocus .bd li img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.picFocus .hd {
+	width: 100%;
+	height: 20%;
+	padding-top: 15px;
+	overflow: hidden;
+}
+.picFocus .hd ul {
+	width: 100%;
+	height: 100%;
+	margin-right: -5px;
+	overflow: hidden;
+	zoom: 1;
+}
+.picFocus .hd ul li {
+    width: calc(25% - 10px);
+	height: 100%;
+	padding-top: 5px;
+    margin-right: 13.33px;
+	float: left;
+	text-align: center;
+}
+.picFocus .hd ul li:last-child {
+	margin-right: 0;
+}
+.picFocus .hd ul li img {
+	width: 100%;
+	height: 100%;
+	border: 2px solid #ddd;
+	cursor: pointer;
+	margin-right: 5px;
+}
+.picFocus .hd ul li.on {
+	background: url("../images/icoUp.gif") no-repeat center 0;
+}
+.picFocus .hd ul li.on img {
+	border-color: #f60;
+}
+.details{
+	width: 40%;
+	height: 100%;
+	float: right;
+	padding: 20px 0 0 60px;
+	position: relative;
+}
+header.name{
+	font-size: 3rem;
+	margin-bottom: 15px;
+}
+p.num{
+	font-size: 1.8rem;
+	margin-bottom: 50px;
+	color: #ccd0d9;
+}
+header.price{
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	color: #fe5049;
+}
+header.price p{
+	font-size: 2.5rem;
+	color: #ccd0d9;
+	display: inline-block;
+	text-decoration: line-through;
+}
+p.prompt{
+	font-size: 1.6rem;
+	margin-bottom: 40px;
+	color: #f1f1f1;
+}
+ul.text{
+	padding-left: 17px;
+	font-size: 1.8rem;
+}
+ul.text li{
+	list-style:disc;
+	font-size: 1.8rem;
+	color: #f1f1f1;
+	margin-bottom: 5px;
+}
+.details span{
+	width: calc(100% - 60px);
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 46px;
+    font-size: 2rem;
+    border: 2px solid #B2B2B2;
+    border-radius: 5px;
+	margin-top: 15px;
+    position: absolute;
+    bottom: 65px;
+}
+.details span.red{
+	background: #FE5049;
+    border: 0;
+    position: absolute;
+    bottom: 0;
+}
+.details span.red img{    
+	width: 25px;
+	margin-right: 13px;
+    vertical-align: sub;
+}
+/*列表list*/
+.movieSlide {
+	width: 100%;
+    height: 100%;
+	position:relative;
+	overflow:hidden;
+}
+.movieSlide .bd {
+	position:relative;
+	z-index:0;
+    width: calc(100% - 230px);
+	height: 100%;
+	float: right;
+	padding: 0 35px;
+}
+.movieSlide .bd ul {
+	width:100%;
+	height: 100%;
+}
+.movieSlide .bd ul li {
+	width:100%;
+	height: 100%;
+	overflow:hidden;
+	text-align:center;
+}
+.movieSlide .bd ul li h3{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: left;
+	padding: 0 20px;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: normal;
+}
+.movieSlide .bd ul li ul.lists{
+    width: calc(100% + 17px);
+    height: calc(100% - 43px);
+	overflow: scroll;
+	padding: 0 7px;
+}
+.movieSlide .bd ul li ul.lists li{
+	width: 25%;
+	height: 313px;
+    float: left;
+    padding: 0 13px;
+	margin-bottom: 17px;
+}
+.movieSlide .bd ul li ul.lists li a{
+	position: relative;
+	text-decoration: none;
+}
+.movieSlide .bd ul li ul.lists li img{
+	width: 100%;
+	height: 229px;
+    vertical-align: bottom;
+}
+.movieSlide .bd ul li ul.lists li a .nameText{
+	width: 100%;
+    height: 84px;
+    background: #EEE;
+    color: #3d3d3d;
+    padding: 7px 13px;
+    text-align: left;
+}
+.nameText h5{
+	color: #3d3d3d;
+    font-size: 1.6rem;
+	margin-bottom: 5px;
+}
+.nameText p{
+	color: #ed1559;
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: 5px;
+}
+.nameText span{
+	color: #999;
+	margin-left: 15px;
+	text-decoration: line-through;
+}
+.movieSlide .hd {
+    width: 230px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+	float: left;
+    overflow: hidden;
+	padding-top: 55px;
+	font-size: 2rem;
+	color: #f6f6f6;
+	background: #3A366F;
+	font-weight: 300;
+}
+.movieSlide .hd ul {
+	width: 100%;
+	height: 100%;
+    position: absolute;
+}
+.movieSlide .hd ul li {
+	margin: 5px auto;
+	cursor:pointer;    
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.movieSlide .hd ul .on {
+	color: #fff;
+    background: #FE5049;
+}

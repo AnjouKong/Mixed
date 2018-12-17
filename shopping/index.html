@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cn">
+  
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalaspanle=no" />
+    <title>index</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.source.js"></script>
+    <script src="js/main.js"></script>
+    
+</head>
+  
+<body style="padding: 90px 60px;">
+  <div class="picFocus">
+    <div class="bd">
+      <ul>
+        <li><img src="images/01.jpg" /></li>
+        <li><img src="images/02.jpg" /></li>
+        <li><img src="images/03.jpg" /></li>
+        <li><img src="images/04.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="hd">
+      <ul>
+        <li><img src="images/01.jpg" /></li>
+        <li><img src="images/02.jpg" /></li>
+        <li><img src="images/03.jpg" /></li>
+        <li><img src="images/04.jpg" /></li>
+      </ul>
+    </div>
+  </div>
+  <div class="details">
+    <header class="name">小麦啤酒&nbsp;&nbsp;白啤</header>
+    <p class="num">商品货号：ECS22100</p>
+    <header class="price">￥85.00 <p>￥150.00</p></header>
+    <p class="prompt">包括关税和税收，免费送货</p>
+    <ul class="text">
+      <li>白啤500ml*12听</li>
+      <li>全国整箱包邮</li>
+      <li>QS认证</li>
+      <li>青岛啤酒，始于1903年</li>
+      <li>优雅精致包装，适合送礼自用</li>
+    </ul>
+    <span>立即购买</span>
+    <span class="red"><img src="images/icon.png" />加入购物车</span>
+  </div>
+
+  <script type="text/javascript">
+    jQuery(".picFocus").slide({ 
+      mainCell:".bd ul",
+      effect:"left",
+      autoPlay:true 
+    });
+  </script>
+  
+</body>
+
+</html>
